@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco do Brasil</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="brand-wrap">
+            <img class="brand-mark" src="../assets/bb-logo.png" alt="" />
+            <div class="brand">BANCO <span>DO BRASIL</span></div>
+          </div>
+
+          <nav class="nav" aria-label="Navegação principal">
+            <a href="#">Para Você</a>
+            <a href="#">Para sua Empresa</a>
+            <a class="has-caret" href="#">Ajuda</a>
+          </nav>
+
+          <label class="search" aria-label="Buscar no site">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="6"></circle>
+              <path d="M16 16L21 21"></path>
+            </svg>
+            <input type="search" placeholder="Buscar no site" />
+          </label>
+        </div>
+      </header>
+
+      <main class="hero">
+        <section class="hero-copy" aria-label="Mensagem principal">
+          <h1 class="headline">
+            <span>Juntos</span>
+            <span>fazemos</span>
+            <span>mais pelo</span>
+            <span>amanhã.</span>
+          </h1>
+
+          <div class="divider" aria-hidden="true"></div>
+
+          <p class="subtext">
+            O talento das nossas pessoas move o Brasil para um futuro com <strong>mais oportunidades.</strong>
+          </p>
+        </section>
+
+        <div class="photo-scene" aria-label="Pessoa usando o celular"></div>
+
+        <aside class="form-card" aria-label="Acesso da conta">
+          <h2>Acesse sua conta</h2>
+
+          <form id="loginForm" novalidate>
+            <div class="field">
+              <label for="matricula">Matrícula</label>
+              <div class="input-wrap">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <input id="matricula" name="matricula" type="text" placeholder="Digite sua matrícula" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="senha">Senha</label>
+              <div class="input-wrap">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+                  <path d="M8 11V8a4 4 0 0 1 8 0v3"></path>
+                </svg>
+                <input id="senha" name="senha" type="password" placeholder="Digite sua senha" />
+                <button class="toggle-pass" type="button" data-target="senha" aria-label="Mostrar ou esconder senha">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="token">2º fator</label>
+              <div class="input-wrap">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M7 7h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                  <path d="M8 7V5.5A4 4 0 0 1 12 2a4 4 0 0 1 4 3.5V7"></path>
+                </svg>
+                <input id="token" name="token" type="text" placeholder="Digite o código do seu aplicativo" />
+              </div>
+            </div>
+
+            <div id="errorMessage" class="error-msg" role="alert"></div>
+
+            <button type="submit" class="submit-btn">Entrar <span aria-hidden="true">›</span></button>
+            <div class="helper"><a href="#">Esqueci minha senha</a></div>
+          </form>
+        </aside>
+      </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
